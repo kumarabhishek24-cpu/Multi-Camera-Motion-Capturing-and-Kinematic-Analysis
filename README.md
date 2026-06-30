@@ -220,3 +220,14 @@ Install the required Python packages:
 ```bash
 pip install -r requirements.txt
 ```
+---
+
+# Running the Project
+
+Run the main application:
+
+```bash
+python src/main.py
+```
+
+Depending on the experimental setup, individual modules such as camera calibration, pose estimation, stereo capture, or LED tracking can also be executed independently from the `src` directory.
