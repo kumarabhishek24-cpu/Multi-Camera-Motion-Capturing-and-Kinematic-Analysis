@@ -231,3 +231,17 @@ python src/main.py
 ```
 
 Depending on the experimental setup, individual modules such as camera calibration, pose estimation, stereo capture, or LED tracking can also be executed independently from the `src` directory.
+---
+
+# Results
+
+The developed system successfully demonstrated:
+
+- Multi-camera image acquisition using four synchronized RGB cameras.
+- Intrinsic and extrinsic camera calibration.
+- Markerless human pose estimation using MediaPipe.
+- Multi-view feature correspondence.
+- Three-dimensional motion reconstruction.
+- Kinematic analysis of reconstructed human motion.
+
+The project demonstrates the practical integration of computer vision, geometry, and scientific software engineering for low-cost motion capture applications.
