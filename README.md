@@ -181,3 +181,42 @@ The reconstructed three-dimensional joint positions enable quantitative analysis
 - Motion reconstruction across multiple viewpoints
 
 The modular implementation allows future integration of additional computer vision models and more advanced reconstruction algorithms without modifying the overall system architecture.
+---
+
+# Repository Structure
+
+```
+Multi-Camera-Motion-Capturing-and-Kinematic-Analysis/
+│
+├── calibration/              # Camera calibration data
+├── calibration_images/       # Checkerboard calibration images
+├── data/                     # Input datasets
+├── docs/                     # Research paper and presentation
+├── images/                   # Figures and project images
+├── models/                   # Model files
+├── output/                   # Generated outputs
+├── src/                      # Source code
+├── stereo_images/            # Stereo image pairs
+├── videos/                   # Demonstration videos
+│
+├── README.md
+├── LICENSE
+└── requirements.txt
+```
+---
+
+# Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/kumarabhishek24-cpu/Multi-Camera-Motion-Capturing-and-Kinematic-Analysis.git
+
+cd Multi-Camera-Motion-Capturing-and-Kinematic-Analysis
+```
+
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
