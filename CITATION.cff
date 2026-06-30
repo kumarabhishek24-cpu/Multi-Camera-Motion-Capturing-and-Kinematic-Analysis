@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: "Multi-Camera Motion Capturing and Kinematic Analysis"
+authors:
+  - family-names: "Abhishek"
+    given-names: "Kumar"
+message: "If you use this project, please cite it."
+license: MIT
