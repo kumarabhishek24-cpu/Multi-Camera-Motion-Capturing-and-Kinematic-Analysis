@@ -31,3 +31,40 @@ Markerless human motion capture is increasingly used in robotics, biomechanics, 
 This project investigates a multi-camera approach to overcome these limitations by combining observations from multiple synchronized viewpoints. Using four calibrated RGB cameras together with an Intel RealSense depth camera, the system estimates human pose from multiple perspectives and reconstructs three-dimensional joint positions for kinematic analysis.
 
 The objective was not only to implement a functional motion capture system, but also to gain practical experience with camera calibration, multi-view geometry, pose estimation, triangulation, and scientific software development within the context of computer vision and robotics.
+---
+
+# System Overview
+
+The Multi-Camera Motion Capturing and Kinematic Analysis Application was developed to investigate robust human motion tracking using multiple synchronized camera viewpoints. The system integrates computer vision, camera calibration, pose estimation, and three-dimensional reconstruction into a unified processing pipeline.
+
+## Hardware
+
+- **4 × Logitech C920 HD Pro RGB Cameras**
+  - Resolution: 640 × 480
+  - Frame Rate: 30 FPS
+  - Used for synchronized multi-view image acquisition.
+
+- **1 × Intel RealSense Depth Camera**
+  - RGB + Depth sensing
+  - Used for comparative evaluation and depth-based analysis.
+
+## Software Stack
+
+- Python
+- OpenCV
+- MediaPipe
+- NumPy
+- Intel RealSense SDK
+- Git
+
+## Core Components
+
+- Multi-camera image acquisition
+- Intrinsic camera calibration
+- Extrinsic camera calibration
+- Image undistortion
+- Markerless human pose estimation
+- LED-based object tracking
+- Multi-view triangulation
+- Three-dimensional motion reconstruction
+- Kinematic analysis
