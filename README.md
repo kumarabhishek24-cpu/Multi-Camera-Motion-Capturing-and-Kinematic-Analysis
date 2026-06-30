@@ -245,3 +245,16 @@ The developed system successfully demonstrated:
 - Kinematic analysis of reconstructed human motion.
 
 The project demonstrates the practical integration of computer vision, geometry, and scientific software engineering for low-cost motion capture applications.
+---
+
+# Future Work
+
+Potential future improvements include:
+
+- Real-time multi-camera synchronization.
+- GPU-accelerated pose estimation.
+- Improved multi-view optimization using bundle adjustment.
+- Temporal filtering for smoother trajectory estimation.
+- Integration with robotics frameworks such as ROS.
+- Extension to full-body biomechanical analysis.
+- Deep learning-based multi-person motion capture.
