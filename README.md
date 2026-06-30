@@ -104,3 +104,50 @@ The motion capture system follows a sequential computer vision pipeline in which
 ```
 
 Each stage was implemented and validated independently before integration into the complete motion capture pipeline. The modular design allows individual components, such as calibration or pose estimation, to be improved without affecting the overall architecture.
+---
+
+# Camera Calibration
+
+Accurate camera calibration is fundamental to reliable three-dimensional reconstruction. Since triangulation relies on precise geometric relationships between cameras, even small calibration errors can significantly affect the reconstructed 3D coordinates.
+
+The calibration process consisted of both intrinsic and extrinsic calibration using a checkerboard calibration pattern.
+
+## Intrinsic Calibration
+
+Intrinsic calibration was performed independently for each camera to estimate its internal imaging parameters, including:
+
+- Camera matrix
+- Focal length
+- Principal point
+- Lens distortion coefficients
+
+These parameters were used to remove radial and tangential lens distortion before further image processing.
+
+## Extrinsic Calibration
+
+Extrinsic calibration estimated the spatial relationship between cameras by determining their rotation and translation with respect to a common world coordinate system.
+
+The resulting transformation matrices enabled observations from multiple viewpoints to be projected into a shared three-dimensional coordinate frame.
+
+## Calibration Workflow
+
+```text
+Checkerboard Image Capture
+            │
+            ▼
+Corner Detection (OpenCV)
+            │
+            ▼
+Intrinsic Parameter Estimation
+            │
+            ▼
+Extrinsic Parameter Estimation
+            │
+            ▼
+Image Undistortion
+            │
+            ▼
+Multi-Camera Coordinate Alignment
+```
+
+Calibration quality was verified by evaluating detected checkerboard corners, reviewing reprojection consistency across viewpoints, and iteratively refining the calibration setup to improve overall reconstruction accuracy.
