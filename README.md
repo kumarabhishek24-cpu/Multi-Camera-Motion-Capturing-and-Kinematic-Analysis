@@ -1,60 +1,19 @@
-# Multi-Camera Motion Capturing and Kinematic Analysis
-A research-oriented computer vision project developed during an AI & Robotics internship at NamTech. The project addresses the limitations of single-camera motion tracking by integrating multiple RGB cameras and a depth camera to estimate human motion more accurately through multi-view geometry and kinematic analysis.
+# Multi-Camera Motion Capturing and Kinematic Analysis Application
 
-## Overview
-Single-camera motion capture systems struggle with depth estimation, occlusion, and viewpoint dependency. This project investigates a multi-camera approach that combines observations from multiple synchronized viewpoints to improve the robustness and accuracy of markerless human motion capture.
-The system integrates:
-- Multi-camera image acquisition
-- Camera calibration
-- Markerless pose estimation
-- Multi-view geometry
-- 3D point triangulation
-- Kinematic analysis
+A research-oriented computer vision project developed during an AI & Robotics internship at NamTech to investigate multi-camera motion capture, 3D reconstruction, and kinematic analysis using synchronized RGB cameras, an Intel RealSense depth camera, OpenCV, and MediaPipe.
 
-## Objectives
-- Design a multi-camera motion capture system.
-- Improve robustness against occlusion.
-- Estimate 3D joint positions from multiple viewpoints.
-- Perform kinematic analysis from reconstructed motion.
-- Explore computer vision techniques applicable to robotics and scientific computing.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-Pose%20Estimation-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Research%20Project-success)
 
-## Hardware
-- 4 × Logitech C920 HD Pro Cameras
-- Intel RealSense Depth Camera
+---
 
-## Software Stack
-- Python
-- OpenCV
-- MediaPipe
-- NumPy
+# Abstract
 
-## Project Status
-This repository is currently being organized for public release.
-Documentation, implementation details, and source code will be published after refactoring and documentation.
+Human motion capture plays a significant role in robotics, biomechanics, sports analytics, healthcare, animation, and human-computer interaction. Conventional monocular vision systems often suffer from depth ambiguity, viewpoint dependency, and occlusion, limiting their ability to reconstruct accurate three-dimensional human motion.
 
-## Repository Structure
-docs/
-images/
-videos/
-src/
-calibration/
-pose_estimation/
-triangulation/
-visualisation/
-data/
+This project investigates a low-cost multi-camera motion capture system that combines four synchronized Logitech C920 RGB cameras with an Intel RealSense depth camera to improve motion tracking accuracy. The implementation integrates camera calibration, markerless pose estimation, multi-view geometry, triangulation, and kinematic analysis to reconstruct three-dimensional joint motion from multiple viewpoints.
 
-## Research Areas
-- Computer Vision
-- Multi-View Geometry
-- Markerless Motion Capture
-- Pose Estimation
-- Camera Calibration
-- 3D Reconstruction
-- Kinematic Analysis
-- Robotics
-- Scientific Computing
-
-## Author
-**Kumar Abhishek**
-B.Tech Computer Science Engineering
-AI & Robotics Intern — NamTech
+The project was developed as part of an AI & Robotics internship at NamTech and focuses on applying computer vision techniques to scientific and engineering problems rather than building a commercial software application.
