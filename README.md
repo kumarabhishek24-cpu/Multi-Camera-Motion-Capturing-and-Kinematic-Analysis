@@ -68,3 +68,39 @@ The Multi-Camera Motion Capturing and Kinematic Analysis Application was develop
 - Multi-view triangulation
 - Three-dimensional motion reconstruction
 - Kinematic analysis
+---
+
+# Computer Vision Pipeline
+
+The motion capture system follows a sequential computer vision pipeline in which the output of each stage serves as the input for the next processing step.
+
+```text
+          Multi-Camera Image Acquisition
+                     │
+                     ▼
+      Intrinsic Camera Calibration
+                     │
+                     ▼
+      Extrinsic Camera Calibration
+                     │
+                     ▼
+          Image Undistortion
+                     │
+                     ▼
+      Markerless Pose Estimation
+          (MediaPipe Pose)
+                     │
+                     ▼
+      Multi-View Feature Association
+                     │
+                     ▼
+        3D Triangulation (DLT)
+                     │
+                     ▼
+      Three-Dimensional Reconstruction
+                     │
+                     ▼
+         Kinematic Motion Analysis
+```
+
+Each stage was implemented and validated independently before integration into the complete motion capture pipeline. The modular design allows individual components, such as calibration or pose estimation, to be improved without affecting the overall architecture.
