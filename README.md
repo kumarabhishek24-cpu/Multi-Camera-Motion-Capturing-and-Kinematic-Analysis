@@ -151,3 +151,33 @@ Multi-Camera Coordinate Alignment
 ```
 
 Calibration quality was verified by evaluating detected checkerboard corners, reviewing reprojection consistency across viewpoints, and iteratively refining the calibration setup to improve overall reconstruction accuracy.
+---
+
+# Pose Estimation and 3D Reconstruction
+
+Following camera calibration, the system performs markerless human pose estimation using **MediaPipe Pose**, which detects anatomical landmarks from synchronized camera streams in real time.
+
+Each camera independently estimates two-dimensional joint coordinates. These observations are then associated across multiple camera viewpoints to establish geometric correspondence for three-dimensional reconstruction.
+
+## Pose Estimation
+
+MediaPipe Pose was used to estimate key body landmarks including the head, shoulders, elbows, wrists, hips, knees, and ankles from RGB images captured simultaneously by multiple cameras.
+
+The detected landmarks provide reliable two-dimensional image coordinates that serve as the basis for multi-view reconstruction.
+
+## Multi-View Triangulation
+
+Corresponding landmark observations from multiple calibrated cameras were combined using multi-view geometry to estimate three-dimensional joint positions.
+
+The reconstruction process relies on calibrated camera parameters and projection matrices to recover spatial coordinates from multiple synchronized viewpoints.
+
+## Kinematic Analysis
+
+The reconstructed three-dimensional joint positions enable quantitative analysis of human movement, including:
+
+- Joint trajectory visualization
+- Limb motion tracking
+- Spatial movement analysis
+- Motion reconstruction across multiple viewpoints
+
+The modular implementation allows future integration of additional computer vision models and more advanced reconstruction algorithms without modifying the overall system architecture.
