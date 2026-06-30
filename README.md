@@ -258,3 +258,21 @@ Potential future improvements include:
 - Integration with robotics frameworks such as ROS.
 - Extension to full-body biomechanical analysis.
 - Deep learning-based multi-person motion capture.
+---
+
+# References
+
+1. OpenCV Documentation — https://opencv.org/
+
+2. MediaPipe Pose — https://developers.google.com/mediapipe
+
+3. Intel RealSense SDK — https://www.intelrealsense.com/
+
+4. Hartley, R., & Zisserman, A.
+   *Multiple View Geometry in Computer Vision.*
+
+5. Zhang, Z.
+   *A Flexible New Technique for Camera Calibration.*
+
+6. Research Paper:
+   *Multi-Camera Motion Capturing and Kinematic Analysis Application* (included in the `docs` folder).
